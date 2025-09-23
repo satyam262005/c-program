@@ -34,18 +34,31 @@
 // }
 
 
- #include<stdio.h>
+//  #include<stdio.h>
 
- int swape (int *x,int *y){
-    int temp =*x;
-  *x=*y;
-  *y=temp;
- }
- int main (){
-    int x=12;
-    int y=13;
-    printf("x=%d, y=%d\n",x,y);
-        printf("x=%d, y=%d",y,x);
+//  int swape (int *x,int *y){
+//     int temp =*x;
+//   *x=*y;
+//   *y=temp;
+//  }
+//  int main (){
+//     int x=12;
+//     int y=13;
+//     printf("x=%d, y=%d\n",x,y);
+//         printf("x=%d, y=%d",y,x);
+//  }
 
-    
- }
+#include<stdio.h>
+int main(){
+int arr1[4]={1,2,3,4};
+int arr2[4]={1,2,3,4};
+ int *p1=arr1;
+ int *p2=arr2;
+ int flag=1;
+for( int i=0;i<4;i++){
+    if(*( p1+i)=*(p2+i)){
+        flag=0;
+        break;
+    }
+}( flag==0)?printf("not equal"):printf("equal");
+}
